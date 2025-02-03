@@ -15,9 +15,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //Task 3a
     function checkForDog(dogName){ return dogsArray.includes(dogName)};
-    console.log("Task 2:", checkForDog("Trixie"));
+    console.log("Task 3a:", checkForDog("Trixie"));
 
     //Task 3b
-    console.log("Task 2:", checkForDog("Baxter"));
+    console.log("Task 3b:", checkForDog("Baxter"));
+
+    //Task 4a
+    function checkForCat(catName){ return catsArray.includes(catName)? true : undefined};
+    console.log("Task 4a:", checkForCat("Bagheera"));
+
+    //Task 4b
+    function checkForCat(catName){ return catsArray.includes(catName)? true : undefined};
+    console.log("Task 4b:", checkForCat("Salem"));
+
+    // Task 5
+    let numberArrayTimesThree = [];
+    numbersArray.forEach(number => {
+        numberArrayTimesThree.push(number*3)
+    });
+    console.log("Task 5:", numbersArray, numberArrayTimesThree);
 
 }) // ends DOMContentLoaded
