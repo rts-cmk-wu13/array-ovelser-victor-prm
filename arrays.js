@@ -43,10 +43,21 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Task 6:", dogsInOneString);
 
     //Task 7a
-    function indexOfFruit(fruitName){return fruitsArray.indexOf(fruitName)}
+    function indexOfFruit(fruitName) { return fruitsArray.indexOf(fruitName) }
     console.log("Task 7a", indexOfFruit("Mango"));
 
     //Task 7b
-    function indexOfFruit(fruitName){return fruitsArray.indexOf(fruitName)}
+    function indexOfFruit(fruitName) { return fruitsArray.indexOf(fruitName) }
     console.log("Task 7b", indexOfFruit("Blåbær"));
+
+    //Task 8
+    function deleteNameAtIndex(dogName) {
+        let deleteAtIndex = dogsArray.indexOf(dogName)
+        dogsArray.splice(deleteAtIndex, 1);
+    }
+    console.log("Task 8 before", dogsArray);
+    deleteNameAtIndex("Polly")
+    console.log("Task 8 after", dogsArray);
+
+
 }) // ends DOMContentLoaded
