@@ -21,25 +21,18 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Task 3b:", checkForDog("Baxter"));
 
     //Task 4a
-    function checkForCat(catName) { return catsArray.includes(catName) ? true : undefined };
-    console.log("Task 4a:", checkForCat("Bagheera"));
+    function findCat(catName) { return catsArray.find((cat) => cat == catName) };
+    console.log("Task 4a:", findCat("Bagheera"));
 
     //Task 4b
-    function checkForCat(catName) { return catsArray.includes(catName) ? true : undefined };
-    console.log("Task 4b:", checkForCat("Salem"));
+    console.log("Task 4b:", findCat("Salem"));
 
     // Task 5
-    let numberArrayTimesThree = [];
-    numbersArray.forEach(number => {
-        numberArrayTimesThree.push(number * 3)
-    });
+    let numberArrayTimesThree = numbersArray.map((num) => num * 3)
     console.log("Task 5:", numbersArray, numberArrayTimesThree);
 
     //Task 6
-    let dogsInOneString = "";
-    dogsArray.forEach(dog => {
-        dogsInOneString += dog;
-    })
+    let dogsInOneString = dogsArray.reduce((total, item) => total + item);
     console.log("Task 6:", dogsInOneString);
 
     //Task 7a
@@ -58,12 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Task 8 before", dogsArray);
     deleteNameAtIndex("Polly")
     console.log("Task 8 after", dogsArray);
-    
+
     //Extra Task
-    let total = 0;
-    numbersArray.forEach(number => {
-        total += number;
-    });
+    let total = numbersArray.reduce((total, item) => total + item);
     console.log("Task Extra", total);
 
 }) // ends DOMContentLoaded
