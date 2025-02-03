@@ -41,4 +41,12 @@ document.addEventListener("DOMContentLoaded", function () {
         dogsInOneString += dog;
     })
     console.log("Task 6:", dogsInOneString);
+
+    //Task 7a
+    function indexOfFruit(fruitName){return fruitsArray.indexOf(fruitName)}
+    console.log("Task 7a", indexOfFruit("Mango"));
+
+    //Task 7b
+    function indexOfFruit(fruitName){return fruitsArray.indexOf(fruitName)}
+    console.log("Task 7b", indexOfFruit("Blåbær"));
 }) // ends DOMContentLoaded
