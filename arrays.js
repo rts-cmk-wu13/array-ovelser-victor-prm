@@ -11,6 +11,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //Task 2
     catsArray.push("Sniffles");
-    console.log("Task 1:", catsArray);
+    console.log("Task 2:", catsArray);
+
+    //Task 3a
+    function checkForDog(dogName){ return dogsArray.includes(dogName)};
+    console.log("Task 2:", checkForDog("Trixie"));
+
+    //Task 3b
+    console.log("Task 2:", checkForDog("Baxter"));
 
 }) // ends DOMContentLoaded
