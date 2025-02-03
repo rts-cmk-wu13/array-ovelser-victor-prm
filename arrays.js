@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Task 5:", numbersArray, numberArrayTimesThree);
 
     //Task 6
-    let dogsInOneString = dogsArray.reduce((total, item) => total + item);
+    let dogsInOneString = dogsArray.join("")
     console.log("Task 6:", dogsInOneString);
 
     //Task 7a
