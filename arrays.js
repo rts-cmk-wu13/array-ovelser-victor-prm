@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
     // --- Løs opgaverne herunder ---
     // Task 1
     numbersLargerThanTwenty = numbersArray.filter((number) => number > 20);
-    console.log("Task 1:", numbersLargerThanTwenty)
+    console.log("Task 1:", numbersLargerThanTwenty);
+
+    //Task 2
+    catsArray.push("Sniffles");
+    console.log("Task 1:", catsArray);
 
 }) // ends DOMContentLoaded
