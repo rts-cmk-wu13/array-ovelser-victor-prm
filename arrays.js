@@ -46,10 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
     //Task 8
     function deleteNameAtIndex(dogName) {
         let deleteAtIndex = dogsArray.indexOf(dogName)
-        dogsArray.splice(deleteAtIndex, 1);
+        if(deleteAtIndex > -1) dogsArray.splice(deleteAtIndex, 1);
     }
     console.log("Task 8 before", dogsArray);
-    deleteNameAtIndex("Polly")
+    deleteNameAtIndex("Polly");
     console.log("Task 8 after", dogsArray);
 
     //Extra Task
