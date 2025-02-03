@@ -58,6 +58,12 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Task 8 before", dogsArray);
     deleteNameAtIndex("Polly")
     console.log("Task 8 after", dogsArray);
-
+    
+    //Extra Task
+    let total = 0;
+    numbersArray.forEach(number => {
+        total += number;
+    });
+    console.log("Task Extra", total);
 
 }) // ends DOMContentLoaded
